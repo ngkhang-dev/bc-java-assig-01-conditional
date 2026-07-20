@@ -226,7 +226,7 @@ public class MainApplication {
         String result = "Số " + number + " đọc là: " + tens + " " + unit;
 
         // OUTPUT
-        System.out.println(result);
+        System.out.println(result.trim());
     }
 
     public static void question5() {
@@ -254,9 +254,9 @@ public class MainApplication {
         // PROCESS
         String greeting;
 
-        if (role.equalsIgnoreCase("B")) greeting = "Chào ông! Máy tính đã sẵn sàng";
-        else if (role.equalsIgnoreCase("H")) greeting = "Chào bà! Siêu thị đang có khuyến mãi";
-        else if (role.equalsIgnoreCase("A")) greeting = "Chào cậu chủ! Cửa hàng game đang hạ giá";
+        if (role.equals("B")) greeting = "Chào ông! Máy tính đã sẵn sàng";
+        else if (role.equals("H")) greeting = "Chào bà! Siêu thị đang có khuyến mãi";
+        else if (role.equals("A")) greeting = "Chào cậu chủ! Cửa hàng game đang hạ giá";
         else greeting = "Xin chào cô chủ! Sắp có buổi ca nhạc, cô có muốn xem qua nó không";
 
         // OUTPUT
